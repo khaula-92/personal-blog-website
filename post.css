@@ -1,0 +1,340 @@
+/*Here all postPages basics css stye*/
+/*Here all about footer css stye*/
+
+
+@import url(./footer.css);
+
+
+
+:root{
+    --light-color:#111;
+    --blue: #28c2c2;
+    --black : #333;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,2);
+ 
+
+}
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: lighter;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+
+}
+body{
+    background: #fff;
+}
+section{
+    padding:2rem 7%;
+
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: #154957;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--blue);
+}
+
+
+
+/* styling the header*/
+.header{
+
+    position: relative;
+    top: 0;
+    right: 100%;
+    left: 0;
+    z-index: 1000;
+    background:#154957;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.header .logo{
+    display: block;
+color: #f7f7f7; 
+font-size: 2.5rem;
+margin-right: auto;
+
+}
+
+.header .logo span{
+    color: var(--blue);
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .menu{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.header .nav .menu li {
+    list-style-type: none;
+}
+.header .nav .menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding:40px 25px;
+    font-size: 18px;
+    line-height: 1.5px;
+    transition: 0.3s;
+}
+
+.header .nav .menu li a:hover{
+    color:var(--blue);
+
+    }
+    
+
+/* (bar /search..)*/
+.header .icons i{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    color: var(--black);
+    background: #eee;
+    border-radius: .5%;
+    margin-left: .7rem;
+    font-size: 1.7rem;
+    cursor:pointer;
+    
+
+
+}
+.header .icons i:hover{
+    color: #fff;
+    background: var(--blue);
+
+}
+
+
+
+
+/*section banner*/
+.banner{
+    min-height: 60vh;
+    background: url(../images/64090d32397823222f2ae0bc_7\ Must-Visit\ Tourist\ Places\ Around\ the\ World\ \(2023\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+
+}
+
+.banner .content{
+    text-align: center;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    max-width: 50rem;
+
+}
+
+.banner .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.banner .content p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1;
+}
+
+
+
+.container {
+   display: grid;
+    grid-template-columns: 3fr;
+    gap:1.5rem;
+    background: #eee;
+
+
+}
+
+.container .posts-container .post h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+
+}
+.container .posts-container .post{
+    width:100%;
+    padding:2rem;
+    background: #fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+
+}
+.container .posts-container .post .image{
+    height:40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.container .posts-container .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--blue);
+
+}
+
+.container .posts-container .post .title{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.container .posts-container .post .text{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+
+}
+
+.container .posts-container .links{
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+display: flex;
+align-items: center;
+}
+
+.container .posts-container .links .user{
+    margin-right: auto;
+}
+
+.container .posts-container .links .icon{
+    padding-right: 1rem;
+
+}
+.container .posts-container .links a{
+    font-size: 1.2rem;
+    color:var(--light-color);
+
+}
+
+.container .posts-container .links a i{
+    padding-right: 1rem;
+    color: var(--black);
+
+}
+
+.container .posts-container .links a:hover{
+    color: var(--blue);
+}
+.container .posts-container .links a:hover i{
+    color: var(--blue);
+
+}
+ 
+
+ /* footer */
+.footer{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.footer .credit{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: var(--black);
+    padding: 1rem;
+
+}
+.footer .credit span{
+    color: var(--blue);
+}
+.footer .follow{
+    padding: 1rem 0r;
+   
+}
+.footer .follow a{
+    height: 4rem;
+   line-height: 4rem;
+   width:4rem;
+   border-radius: 50%;
+   font-size: 1.4rem;
+   background: #154957;
+   color: #fff;
+   margin: 0 .1rem;
+   text-align: center;
+
+}
+
+.footer .follow a:hover{
+    background: var(--blue);
+
+}
+
+
+
+@media (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    html{
+        font-size: 55%;
+
+    }
+    .header .nav  .menu  li { 
+        position: absolute;
+         top:100%;
+         left:0;
+         right: 0;
+         border-top: var(--border);
+         border-bottom: var(--border);
+         background: #fff;
+         display: none;
+        
+     }
+     .container .post-container .post .image{
+        height: 30rem;
+    }
+    .footer{
+        flex-flow: column;
+        text-align: center;
+    }
+    .contact form .inputBox input{
+        width: 100%;
+    }
+}
+
